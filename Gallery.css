@@ -1,0 +1,123 @@
+body {
+    background: linear-gradient(135deg, #fff9db, #fffef5);
+    margin: 0;
+    padding-top: 190px; 
+}
+
+.tema {
+    color: gold;
+    font-size: 80px;
+    font-weight: bold;
+    opacity: 0;
+    transform: translateX(-200px);
+    animation: onga 1s ease forwards;
+}
+
+
+@keyframes onga {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+} 
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #111;
+  padding: 20px 60px;
+  border-radius: 20px;
+  height: 120px;
+
+  position: fixed;  
+  top: 0;            
+  width: 95%;      
+  z-index: 1000;      
+}
+
+
+.links { 
+  font-size: 40px;
+  display: flex;
+  gap: 35px;
+}
+
+.links li {
+    opacity: 0;
+    transform: translateX(50px);
+    animation: shepke 0.8s forwards;
+}
+
+.links li:nth-child(1) { animation-delay: 0.3s; } 
+.links li:nth-child(2) { animation-delay: 0.6s; }
+.links li:nth-child(3) { animation-delay: 0.9s; }
+.links li:nth-child(4) { animation-delay: 1.2s; }
+
+@keyframes shepke {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.links a {
+  text-decoration: none;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+
+.links a:hover {
+  background: gold;
+  color: black;
+  font-size: 45px;
+  box-shadow: 0 0 25px gold; 
+  transition: 0.5s;
+}
+
+
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 600px);
+    justify-content: center;
+    gap: 60px;
+    padding: 40px;
+}
+
+.gallery-item {
+    width: 600px;
+    height: 500px;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: tobege 1s ease forwards;
+}
+
+.gallery-item img {
+    width: 600px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.5s , box-shadow 0.5s;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 30px rgba(243, 247, 2, 0.99);
+}
+
+.gallery-item:nth-child(1) { animation-delay: 0.3s; }
+.gallery-item:nth-child(2) { animation-delay: 0.6s; }
+.gallery-item:nth-child(3) { animation-delay: 0.9s; }
+.gallery-item:nth-child(4) { animation-delay: 1.2s; }
+.gallery-item:nth-child(5) { animation-delay: 1.5s; }
+.gallery-item:nth-child(6) { animation-delay: 1.8s; }
+
+@keyframes tobege {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

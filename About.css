@@ -1,0 +1,174 @@
+body {
+    background: linear-gradient(135deg, #fff9db, #fffef5);
+    margin: 0;
+    padding-top: 120px;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #111;
+  padding: 20px 60px;
+  border-radius: 20px;
+  height: 120px;
+
+  position: fixed;  
+  top: 0;            
+  width: 95%;      
+  z-index: 1000;          
+}
+
+.tema {
+    color: gold;
+    font-size: 80px;
+    font-weight: bold;
+    opacity: 0;
+    transform: translateX(-200px);
+    animation: onga 1s ease forwards;
+}
+
+
+@keyframes onga {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+} 
+
+
+.links { 
+  font-size: 40px;
+  display: flex;
+  gap: 35px;
+}
+
+.links li {
+    opacity: 0;
+    transform: translateX(50px);
+    animation: shepke 0.8s forwards;
+}
+
+.links li:nth-child(1) { animation-delay: 0.3s; }
+.links li:nth-child(2) { animation-delay: 0.6s; }
+.links li:nth-child(3) { animation-delay: 0.9s; }
+.links li:nth-child(4) { animation-delay: 1.2s; }
+
+@keyframes shepke {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.links a {
+  text-decoration: none;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+
+.links a:hover {
+  background: gold;
+  color: black;
+  font-size: 45px;
+  box-shadow: 0 0 25px gold; 
+  transition: 0.5s;
+}
+
+
+
+p {
+  font-size: 50px;
+  color: #3b3802;
+}
+
+h2 {
+  font-size: 50px;
+  margin-bottom: 20px;
+  color: #3d4402;
+}
+
+h1{
+  text-align: center;
+  margin-top: 130px;
+}
+
+h3 {
+  font-size: 50px;
+}
+
+.bmw-info {
+  padding: 60px;
+  background: #f8edb5;
+  color: #222;
+  padding: 30px;
+  border-radius: 15px;
+  width: 1900px;
+  margin: 30px auto;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  font-family: Arial, sans-serif;
+}
+
+.bmw-info h2 {
+  color: #f1c40f;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.bmw-info h3 {
+  color: #c29709; 
+  margin-top: 20px;
+}
+
+.bmw-models {
+  display: flex;
+  width: 2000px;
+  gap: 60px;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.bmw-models div {
+  width: 300px;
+  font-size: 30px;
+  background: #f1c40f; 
+  color: #222;
+  padding: 10px 15px;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.bmw-models div:hover {
+  background: #d4ac0d;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.magliwmat {
+  font-size: 30px;
+}
+
+.bmw {
+  font-size: 50px;
+  text-decoration: none;
+  width: 30px;
+  height: 20px;
+  background-color: #f1c40f;
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+
+ul {
+  font-size: 40px;
+}
+
+ol {
+  font-size: 40px;
+}
+
